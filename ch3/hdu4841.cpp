@@ -1,3 +1,4 @@
+//ECUST luoyongjun
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
@@ -16,10 +17,10 @@ int main(){
             if(!(i%50) && i)  cout<<endl;       //50个字母一行
             if(j<table.size() && i==table[j]){ //table留下的都是好人
                 j++;
-cout<<"G";
+                cout<<"G";
             }
             else
-cout<<"B";
+                cout<<"B";
         }
         cout<<endl<<endl;                          //留一个空行
     }

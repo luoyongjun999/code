@@ -1,3 +1,4 @@
+//ECUST luoyongjun
 #include"stdio.h"
 const int N = 10010;
 int data[N];

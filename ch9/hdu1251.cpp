@@ -1,3 +1,4 @@
+//ECUST luoyongjun
 #include <bits/stdc++.h>
 using namespace std;
 int trie[1000010][26];    //数组定义字典树，存储下一个字符的位置

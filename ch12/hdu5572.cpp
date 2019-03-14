@@ -1,3 +1,4 @@
+//ECUST luoyongjun
 #include <bits/stdc++.h>
 using namespace std;
 const double eps = 1e-8;  //本题如果设定eps=1e-10，会Wrong Answer

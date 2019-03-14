@@ -1,3 +1,4 @@
+//ECUST luoyongjun
 #include<stdio.h>
 #include<string.h>
 const int Max = 10000;
