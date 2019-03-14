@@ -1,3 +1,4 @@
+//ECUST: luoyongjun
 #include <iostream>
 using namespace std;
 int val[1010];                           //存一个搜索路径上每一步的计算结果

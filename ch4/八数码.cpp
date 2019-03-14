@@ -1,3 +1,4 @@
+//ECUST   luoyongjun
 #include<bits/stdc++.h>
 const int LEN = 362888;       //×´Ì¬¹²9!=362880ÖÖ
 using namespace std;
