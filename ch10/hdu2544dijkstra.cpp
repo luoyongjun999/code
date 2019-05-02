@@ -56,7 +56,7 @@ int main(){
         for (int i=1;i<=n;i++)
             e[i].clear();
         while (m--) {
-int a,b,c;
+            int a,b,c;
             scanf("%d%d%d",&a,&b,&c);
             e[a].push_back(edge(a,b,c));
 //结点a的邻居，都放在node[a]里

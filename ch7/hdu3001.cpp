@@ -8,7 +8,7 @@ int bit[12]={0,1,3,9,27,81,243,729,2187,6561,19683,59049};
                           //三进制每一位的权值，与二进制的0, 1, 2, 4, 8...对照
 int tri[60000][11];
 int dp[11][60000];
-int map[11][11];                  //存图
+int graph[11][11];                  //存图
 void make_trb(){                  //初始化，求所有可能的路径
     for(int i=0;i<59050;++i){   //共3^10=59050种状态
        int t=i;
@@ -31,7 +31,7 @@ int comp_dp(){
                 for(int k=1; k<=n; k++)                {
                     int l=i-bit[j];          //i状态的第j位置0
                     if(tri[i][k]==0) continue;
-                    dp[j][i]=min(dp[j][i],dp[k][l]+map[k][j]);
+                    dp[j][i]=min(dp[j][i],dp[k][l]+graph[k][j]);
                 }
             }
             if(flag)                          //找最小费用
@@ -43,11 +43,11 @@ int comp_dp(){
 int main(){
     make_trb();
     while(cin>>n>>m){
-        memset(map,INF,sizeof(map));
+        memset(graph,INF,sizeof(graph));
         while(m--){
             int a,b,c;
             cin>>a>>b>>c;
-            if(c<map[a][b])  map[a][b]=map[b][a]=c;
+            if(c<graph[a][b])  graph[a][b]=graph[b][a]=c;
         }
         int ans = comp_dp();
         if(ans==INF) cout<<"-1"<<endl;
